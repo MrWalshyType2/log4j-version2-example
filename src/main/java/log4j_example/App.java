@@ -17,8 +17,7 @@ public class App {
 		try {
 			System.out.println(3 / 0);
 		} catch (Exception e) {
-			log.error(e.getMessage());
-			log.info(e.getStackTrace());
+			log.error(e.getMessage(), e);
 		}
 
 		divide(10, 0);
